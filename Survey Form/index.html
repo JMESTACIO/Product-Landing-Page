@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="title">Simple Survey Form</h1>
+  <p id="description">Please fill out this quick form.</p>
+
+  <form id="survey-form">
+    
+    <div>
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+    </div>
+
+    <div>
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+    </div>
+
+    <div>
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" type="number" min="10" max="100" placeholder="Enter age">
+    </div>
+
+    <div>
+      <label for="dropdown">Choose an option:</label>
+      <select id="dropdown" required>
+        <option disabled selected value="">Select one...</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+    </div>
+
+    <div>
+      <p>Pick one:</p>
+      <label>
+        <input type="radio" name="radio-group" value="yes" checked> Yes
+      </label>
+      <label>
+        <input type="radio" name="radio-group" value="no"> No
+      </label>
+    </div>
+
+    <div>
+      <p>Pick any:</p>
+      <label>
+        <input type="checkbox" name="check-group" value="choice1"> Choice 1
+      </label>
+      <label>
+        <input type="checkbox" name="check-group" value="choice2"> Choice 2
+      </label>
+    </div>
+
+    <div>
+      <label for="comments">Comments:</label>
+      <textarea id="comments" placeholder="Your comments here..."></textarea>
+    </div>
+
+    <div>
+      <button type="submit" id="submit">Submit</button>
+    </div>
+
+  </form>
+
+</body>
+</html>
